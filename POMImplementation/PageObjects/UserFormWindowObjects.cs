@@ -10,7 +10,6 @@ namespace POMImplementation.PageActions
 {
     public class UserFormWindowObjects
     {
-
         public static IWebElement TitleDropDown => DriverContext.Driver.FindElement(By.Name("TitleId"));
 
         public static IWebElement InitialTextField => DriverContext.Driver.FindElement(By.Name("Initial"));
