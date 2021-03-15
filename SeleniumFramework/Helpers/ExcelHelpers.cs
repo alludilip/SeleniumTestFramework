@@ -63,7 +63,6 @@ namespace SeleniumFramework.Helpers
                     dataCol.Add(dtTable);
                 }
             }
-
         }
 
         public static string ReadData(int rowNumber, string colName)

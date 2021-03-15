@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace SeleniumFramework.Base
 {
@@ -6,7 +8,7 @@ namespace SeleniumFramework.Base
     {
 
         private static IWebDriver WebDriver;
-
+       
         public static IWebDriver Driver
         {
             get
@@ -21,6 +23,6 @@ namespace SeleniumFramework.Base
 
         public static Browser Browser { get; set; }
 
-
+      
     }
 }

@@ -19,5 +19,9 @@ namespace SeleniumFramework.Configuration
 
         public static string LogPath { get; set; }
 
+        public static string ImplicitWaitTimeout { get; set; }
+
+        public static string ExplicitWaitTimeout { get; set; }
+
     }
 }

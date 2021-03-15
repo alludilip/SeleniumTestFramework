@@ -31,8 +31,5 @@ namespace SeleniumFramework.Base
             Chrome
         }
 
-
-
-
     }
 }

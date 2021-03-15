@@ -21,11 +21,13 @@ namespace SeleniumFramework.ConfigElement
         public string IsLog { get { return (string)base["isLog"]; } }
 
         [ConfigurationProperty("logPath", IsRequired = true)]
-        public string Logpath { get { return (string)base["logPath"]; } }
+        public string LogPath { get { return (string)base["logPath"]; } }
 
+        [ConfigurationProperty("ImplicitWaitTimeout", IsRequired = true)]
+        public string ImplicitWaitTimeout { get { return (string)base["ImplicitWaitTimeout"]; } }
 
-
-
+        [ConfigurationProperty("ExplicitWaitTimeout", IsRequired = true)]
+        public string ExplicitWaitTimeout { get { return (string)base["ExplicitWaitTimeout"]; } }
 
     }
 }

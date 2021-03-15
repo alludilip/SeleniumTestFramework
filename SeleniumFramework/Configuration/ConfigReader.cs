@@ -11,11 +11,12 @@ namespace SeleniumFramework.Configuration
         {
             Settings.AUT = TestConfiguration.Settings.TestSettings["staging"].AUT;
             //Settings.BuildName = TestConfiguration.Settings.TestSettings["staging"].BuildName;
-            Settings.TestType = TestConfiguration.Settings.TestSettings["staging"].IsLog;
+            Settings.TestType = TestConfiguration.Settings.TestSettings["staging"].TestType;
             //Settings.IsReporting = TestConfiguration.Settings.TestSettings["staging"].IsReporting;
-            Settings.LogPath = TestConfiguration.Settings.TestSettings["staging"].Logpath;
+            Settings.LogPath = TestConfiguration.Settings.TestSettings["staging"].LogPath;
             Settings.BrowserType = (BrowserType)Enum.Parse(typeof(BrowserType), TestConfiguration.Settings.TestSettings["staging"].Browser);
-
+            Settings.ExplicitWaitTimeout = TestConfiguration.Settings.TestSettings["staging"].ExplicitWaitTimeout;
+            Settings.ImplicitWaitTimeout = TestConfiguration.Settings.TestSettings["staging"].ImplicitWaitTimeout;
 
         }
 

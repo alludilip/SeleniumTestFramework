@@ -1,4 +1,5 @@
-﻿using SeleniumFramework.Base;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SeleniumFramework.Base;
 using static SeleniumFramework.Base.Browser;
 
 namespace TestExecutionProject
@@ -12,10 +13,15 @@ namespace TestExecutionProject
             NavigateSite();
         }
 
-
-
-
-
+        [TestCleanup]
+        public void CleanUp()
+        {
+            // KillProcesses();
+            //close and quit the browser
+            DriverContext.Driver.Close();
+            DriverContext.Driver.Quit();
+            DriverContext.Driver = null;
+        }
 
     }
 }
