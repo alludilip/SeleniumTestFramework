@@ -11,8 +11,11 @@ namespace TestExecutionProject
 
         // using Generics
         [TestMethod]
+
         public void LoginTestUsinGenerics()
         {
+            string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+
             string fileName = Environment.CurrentDirectory.ToString() + @"\Data\Credentials.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);
             

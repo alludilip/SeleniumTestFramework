@@ -61,14 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="ExtendedActionsFunctions\AlertWindowOperations.cs" />
-    <Compile Include="ExtendedActionsFunctions\ActionsMethodsWrapper.cs" />
-    <Compile Include="ExtendedActionsFunctions\WebDriverExtensions.cs" />
-    <Compile Include="ExtendedActionsFunctions\WebElementAssertions.cs" />
-    <Compile Include="ExtendedActionsFunctions\TextFieldOperations.cs" />
-    <Compile Include="ExtendedActionsFunctions\ButtonOperations.cs" />
-    <Compile Include="ExtendedActionsFunctions\SelectDropdownOperations.cs" />
     <Compile Include="PageActions\UserFormWindowActions.cs" />
     <Compile Include="PageActions\LoginWindowActions.cs" />
     <Compile Include="PageObjects\LoginWindowObjects.cs" />
@@ -77,11 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="chromedriver.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SeleniumFramework\SeleniumFramework.csproj">

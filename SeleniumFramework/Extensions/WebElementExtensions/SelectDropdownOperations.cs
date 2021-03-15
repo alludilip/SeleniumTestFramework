@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace POMImplementation.ExtendedActionsFunctions
+namespace SeleniumFramework.Extensions.WebElementExtensions
 {
     public static class SelectDropdownOperations
     {

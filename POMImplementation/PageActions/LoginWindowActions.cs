@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using POMImplementation.ExtendedActionsFunctions;
 using SeleniumFramework.Base;
+using SeleniumFramework.Extensions.WebElementExtensions;
 
 namespace POMImplementation.PageActions
 {
@@ -24,7 +24,7 @@ namespace POMImplementation.PageActions
 
         public void VerifyLoginWindowLoaded()
         {
-            Assert.IsTrue(BaseClass.Driver.Title.Contains("Execute Automation"));
+            Assert.IsTrue(DriverContext.Driver.Title.Contains("Execute Automation"));
         }
 
     }

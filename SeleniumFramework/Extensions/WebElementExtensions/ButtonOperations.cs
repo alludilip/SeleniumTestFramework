@@ -1,9 +1,8 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using helpers = SeleniumExtras.WaitHelpers;
-using System;
+using SeleniumFramework.Base;
 
-namespace POMImplementation.ExtendedActionsFunctions
+namespace SeleniumFramework.Extensions.WebElementExtensions
 {
     public static class ButtonOperations
     {
@@ -11,7 +10,7 @@ namespace POMImplementation.ExtendedActionsFunctions
         // click onto a button/Checkbox/option
         public static void ButtonClick(this IWebElement element)
         {
-           // BaseClass.wait.Until(helpers.ExpectedConditions.ElementToBeClickable(element));
+            TestInitializeHook.WebDriverWait.Until(helpers.ExpectedConditions.ElementToBeClickable(element));
             element.Click();
         }
 

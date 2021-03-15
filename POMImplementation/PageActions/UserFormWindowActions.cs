@@ -1,5 +1,5 @@
-﻿using POMImplementation.ExtendedActionsFunctions;
-using SeleniumFramework.Base;
+﻿using SeleniumFramework.Base;
+using SeleniumFramework.Extensions.WebElementExtensions;
 
 namespace POMImplementation.PageActions
 {

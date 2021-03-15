@@ -1,12 +1,13 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using SeleniumFramework.Base;
 
-namespace POMImplementation.ExtendedActionsFunctions
+namespace SeleniumFramework.Extensions.WebElementExtensions
 {
     public static class ActionsMethodsWrapper
     {
 
-        public static Actions Actions = new Actions(BaseClass.Driver);
+        public static Actions Actions = new Actions(DriverContext.Driver);
 
         // To drag and drop elements in window
         public static void DragAndDropAction(this IWebElement sourceLocation, IWebElement dropLocation)
@@ -31,7 +32,6 @@ namespace POMImplementation.ExtendedActionsFunctions
         {
             Actions.MoveToElement(clickLocation).Build().Perform();
         }
-
 
     }
 }

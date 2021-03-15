@@ -1,8 +1,7 @@
 ﻿using OpenQA.Selenium;
-using helpers = SeleniumExtras.WaitHelpers;
 
 
-namespace POMImplementation.ExtendedActionsFunctions
+namespace SeleniumFramework.Extensions.WebElementExtensions
 {
     public static class TextFieldOperations
     {
